@@ -38,5 +38,5 @@ Projekt łączy algorytmy wizji komputerowej (OpenCV) z inteligentnym silnikiem 
    g++ -std=c++17 -I/opt/homebrew/include -o ceph_app *.cpp `pkg-config --cflags --libs opencv4`
    ```
 ## 📄 Dane do pobrania
-![Figshare images, json files](https://figshare.com/articles/dataset/Aariz_Cephalometric_Dataset/27986417/1?file=51041642)
+[Figshare images, json files](https://figshare.com/articles/dataset/Aariz_Cephalometric_Dataset/27986417/1?file=51041642)
 
