@@ -29,7 +29,7 @@ Projekt łączy algorytmy wizji komputerowej (OpenCV) z inteligentnym silnikiem 
 
 ---
 
-# ⚡ Instalacja CephTrainer — 5 Minut
+# ⚡ Instalacja
 
 ## 1️⃣ Biblioteki
 
