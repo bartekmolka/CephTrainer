@@ -20,7 +20,7 @@ Projekt łączy algorytmy wizji komputerowej (OpenCV) z inteligentnym silnikiem 
 
 ---
 
-## 📋 Wymagania techniczne
+## 📋 Wymagania
 
 - **Język:** C++17 lub nowszy.
 - **Biblioteki:** \* OpenCV 4.x (z obsługą `imgproc`, `highgui`, `videoio`).
@@ -29,14 +29,59 @@ Projekt łączy algorytmy wizji komputerowej (OpenCV) z inteligentnym silnikiem 
 
 ---
 
-## 🚀 Start
+# ⚡ Instalacja CephTrainer — 5 Minut
 
-1. Sklonuj repozytorium.
-2. Upewnij się, że struktura katalogów `data/Cephalograms`, `data/CVM_Stages`, `data/Senior_Orthodontists` jest poprawnie wypełniona plikami pacjentów.
-3. Skompiluj projekt za pomocą polecenia:
-   ```bash
-   g++ -std=c++17 -I/opt/homebrew/include -o ceph_app *.cpp `pkg-config --cflags --libs opencv4`
-   ```
-## 📄 Dane do pobrania
-[Figshare images, json files](https://figshare.com/articles/dataset/Aariz_Cephalometric_Dataset/27986417/1?file=51041642)
+## 1️⃣ Biblioteki
 
+### macOS
+```bash
+brew install opencv nlohmann-json cmake
+```
+
+### Linux (Ubuntu)
+```bash
+sudo apt install libopencv-dev nlohmann-json3-dev cmake build-essential
+```
+
+### Windows
+```cmd
+# użyj vcpkg
+```
+
+---
+
+## 2️⃣ Build
+
+```bash
+cd ~/CephTrainer
+
+chmod +x build.sh
+./build.sh Release
+```
+
+---
+
+## 3️⃣ Dataset
+
+```bash
+mkdir -p data/Cephalograms data/Senior_Orthodontists data/CVM_Stages
+
+# pliki:
+# - Obrazy: data/Cephalograms/*.png
+# - Landmarks: data/Senior_Orthodontists/*.json
+# - CVM: data/CVM_Stages/*.json
+```
+
+---
+
+## 4️⃣ Uruchomienie
+
+```bash
+./build/CephTrainer
+```
+
+---
+
+## ✅ Gotowe!
+
+Aplikacja powinna się otworzyć. Kliknij na pacjenta aby zacząć. 🎉

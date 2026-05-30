@@ -30,7 +30,7 @@ void DataManager::resolveDataRoot()
 
     try
     {
-        m_dataRoot = (fs::current_path() / "data").string();
+        m_dataRoot = (fs::current_path().parent_path() / "data").string();
         std::cout << "[DataManager] Root fallback: " << m_dataRoot << "\n";
     }
     catch (const std::exception &e)
