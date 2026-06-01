@@ -55,8 +55,8 @@ sudo apt install libopencv-dev nlohmann-json3-dev cmake build-essential
 ```bash
 cd ~/CephTrainer
 
-chmod +x build.sh
-./build.sh Release
+mkdir -p build
+cmake -B build -DCMAKE_BUILD_TYPE=Release
 ```
 
 ---
