@@ -185,10 +185,7 @@ g++ --version
 clang --version
 ```
 
-## Licencja
-
-[Twoja licencja]
-
 ## Autor
 
-[Twoje dane]
+<em>Bartosz Mółka
+Informatyka i Systemy Inteligentne, AGH</em>
