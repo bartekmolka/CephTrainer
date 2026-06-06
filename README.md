@@ -187,5 +187,5 @@ clang --version
 
 ## Autor
 
-<em>Bartosz Mółka
+<em>Bartosz Mółka<br>
 Informatyka i Systemy Inteligentne, AGH</em>
